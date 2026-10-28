@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "dataset": "SYNTHETIC_SMOKE_ONLY",
+  "task": {
+    "Task": "Synthetic software verification; no biological interpretation"
+  },
+  "rows": [
+    {
+      "id": "G000",
+      "score": 0.0,
+      "hit": false
+    },
+    {
+      "id": "G001",
+      "score": 1.0,
+      "hit": false
+    },
+    {
+      "id": "G002",
+      "score": 2.0,
+      "hit": false
+    },
+    {
+      "id": "G003",
+      "score": 3.0,
+      "hit": false
+    },
+    {
+      "id": "G004",
+      "score": 4.0,
+      "hit": false
+    },
+    {
+      "id": "G005",
+      "score": 5.0,
+      "hit": false
+    },
+    {
+      "id": "G006",
+      "score": 6.0,
+      "hit": false
+    },
+    {
+      "id": "G007",
+      "score": 7.0,
+      "hit": false
+    },
+    {
+      "id": "G008",
+      "score": 8.0,
+      "hit": false
+    },
+    {
+      "id": "G009",
+      "score": 9.0,
+      "hit": false
+    },
+    {
+      "id": "G010",
+      "score": 10.0,
+      "hit": false
+    },
+    {
+      "id": "G011",
+      "score": 11.0,
+      "hit": false
+    },
+    {
+      "id": "G012",
+      "score": 12.0,
+      "hit": false
+    },
+    {
+      "id": "G013",
+      "score": 13.0,
+      "hit": false
+    },
+    {
+      "id": "G014",
+      "score": 14.0,
+      "hit": false
+    },
+    {
+      "id": "G015",
+      "score": 15.0,
+      "hit": false
+    },
+    {
+      "id": "G016",
+      "score": 16.0,
+      "hit": false
+    },
+    {
+      "id": "G017",
+      "score": 17.0,
+      "hit": false
+    },
+    {
+      "id": "G018",
+      "score": 18.0,
+      "hit": false
+    },
+    {
+      "id": "G019",
+      "score": 19.0,
+      "hit": false
+    },
+    {
+      "id": "G020",
+      "score": 20.0,
+      "hit": false
+    },
+    {
+      "id": "G021",
+      "score": 21.0,
+      "hit": false
+    },
+    {
+      "id": "G022",
+      "score": 22.0,
+      "hit": false
+    },
+    {
+      "id": "G023",
+      "score": 23.0,
+      "hit": false
+    },
+    {
+      "id": "G024",
+      "score": 24.0,
+      "hit": true
+    },
+    {
+      "id": "G025",
+      "score": 25.0,
+      "hit": true
+    },
+    {
+      "id": "G026",
+      "score": 26.0,
+      "hit": true
+    },
+    {
+      "id": "G027",
+      "score": 27.0,
+      "hit": true
+    },
+    {
+      "id": "G028",
+      "score": 28.0,
+      "hit": true
+    },
+    {
+      "id": "G029",
+      "score": 29.0,
+      "hit": true
+    },
+    {
+      "id": "G030",
+      "score": 30.0,
+      "hit": true
+    },
+    {
+      "id": "G031",
+      "score": 31.0,
+      "hit": true
+    },
+    {
+      "id": "G032",
+      "score": 32.0,
+      "hit": true
+    },
+    {
+      "id": "G033",
+      "score": 33.0,
+      "hit": true
+    },
+    {
+      "id": "G034",
+      "score": 34.0,
+      "hit": true
+    },
+    {
+      "id": "G035",
+      "score": 35.0,
+      "hit": true
+    },
+    {
+      "id": "G036",
+      "score": 36.0,
+      "hit": true
+    },
+    {
+      "id": "G037",
+      "score": 37.0,
+      "hit": true
+    },
+    {
+      "id": "G038",
+      "score": 38.0,
+      "hit": true
+    },
+    {
+      "id": "G039",
+      "score": 39.0,
+      "hit": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "proposed; freeze before model development",
+  "train": ["Carnevale22_Adenosine", "Sanchez21", "Sanchez21_down"],
+  "validation": ["Scharenberg22"],
+  "test": ["IFNG", "IL2"],
+  "study_groups": {
+    "schmidt": ["IFNG", "IL2"],
+    "sanchez": ["Sanchez21", "Sanchez21_down"],
+    "carnevale": ["Carnevale22_Adenosine"],
+    "scharenberg": ["Scharenberg22"]
+  },
+  "limitation": "IFNG and IL2 are two assays from ONE held-out study. No broad generalization claim. Reserve test runs until validation locks all choices."
+}

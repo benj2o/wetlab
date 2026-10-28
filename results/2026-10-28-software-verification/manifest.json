@@ -1,0 +1,17 @@
+{
+  "status": "software verification only; synthetic data",
+  "python": "3.9.6",
+  "platform": "Darwin arm64",
+  "sha256": {
+    "experiments/bda/.gitignore": "4d1498002c089ffb6b4e5ab2eabb5f2c7777c964988cf03d9d74bf967fc79913",
+    "experiments/bda/README.md": "cd73c1c8585ab7c2f059a9cdb69e0109fe272c93774abc84ccfe45f35eed134f",
+    "experiments/bda/bench.py": "53b2326f58114b806ca98b9ead18df8ede2e8e31845de013bbc15b5d036ad307",
+    "experiments/bda/configs/split.json": "efab77ab5c6d5237e29c5cce61dae73e8ecba5fdf620a68d9f361912a35278c3",
+    "experiments/bda/examples/random_agent.py": "5062ba62b41ce942b5516b7c54e18839064e2db90a3954c49eb9fadf507ff00f",
+    "experiments/bda/examples/synthetic.json": "81368b16f6b4612ef20079ced6aba5344ce90a0eb134eb51b58865dc9e1b2a27",
+    "experiments/bda/local_model_agent.py": "b7901fa7f47ac52f2e74d2e280af1f3aa676329e879261515026fdb230f82eec",
+    "experiments/bda/requirements-train.txt": "5d39905114d856534e88c2312f3dcfe83f2bef66221d8502d67dc9ce6120c71a",
+    "experiments/bda/tests/test_bench.py": "f60f9fc72e62ba70cb7609ebd7cf04f4c9d14838908d252a33ccc247ca2c1ddb",
+    "experiments/bda/train_lora.py": "56b92bd7a121456ab152a173d95461d40b7a7e76d51be23ef182333a9ac3d4f1"
+  }
+}

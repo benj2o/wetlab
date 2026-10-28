@@ -1,0 +1,513 @@
+{
+  "schema": 1,
+  "dataset": "SYNTHETIC_SMOKE_ONLY",
+  "seed": 0,
+  "feedback": "true",
+  "rounds": 3,
+  "batch": 8,
+  "candidate_count": 40,
+  "total_hits": 16,
+  "metrics": [
+    {
+      "round": 1,
+      "experiments": 8,
+      "hits": 2,
+      "hit_recall": 0.125,
+      "precision": 0.25,
+      "enrichment": 0.625,
+      "oracle_hits": 8
+    },
+    {
+      "round": 2,
+      "experiments": 16,
+      "hits": 5,
+      "hit_recall": 0.3125,
+      "precision": 0.3125,
+      "enrichment": 0.78125,
+      "oracle_hits": 16
+    },
+    {
+      "round": 3,
+      "experiments": 24,
+      "hits": 9,
+      "hit_recall": 0.5625,
+      "precision": 0.375,
+      "enrichment": 0.9375,
+      "oracle_hits": 16
+    }
+  ],
+  "events": [
+    {
+      "observation": {
+        "task": {
+          "Task": "Synthetic software verification; no biological interpretation"
+        },
+        "candidates": [
+          "G000",
+          "G027",
+          "G012",
+          "G021",
+          "G029",
+          "G015",
+          "G038",
+          "G034",
+          "G001",
+          "G020",
+          "G007",
+          "G005",
+          "G010",
+          "G013",
+          "G014",
+          "G037",
+          "G022",
+          "G039",
+          "G023",
+          "G017",
+          "G008",
+          "G035",
+          "G003",
+          "G033",
+          "G009",
+          "G004",
+          "G036",
+          "G006",
+          "G028",
+          "G018",
+          "G011",
+          "G030",
+          "G019",
+          "G025",
+          "G031",
+          "G032",
+          "G016",
+          "G002",
+          "G026",
+          "G024"
+        ],
+        "history": [],
+        "batch_size": 8,
+        "round": 1,
+        "seed": 0,
+        "instruction": "Select exactly batch_size distinct untested candidate IDs. Return JSON {\"selected\": [IDs]}. Maximize total discovered hits."
+      },
+      "selected": [
+        "G009",
+        "G036",
+        "G012",
+        "G022",
+        "G019",
+        "G030",
+        "G004",
+        "G017"
+      ],
+      "truth": [
+        {
+          "id": "G009",
+          "score": 9.0,
+          "hit": false
+        },
+        {
+          "id": "G036",
+          "score": 36.0,
+          "hit": true
+        },
+        {
+          "id": "G012",
+          "score": 12.0,
+          "hit": false
+        },
+        {
+          "id": "G022",
+          "score": 22.0,
+          "hit": false
+        },
+        {
+          "id": "G019",
+          "score": 19.0,
+          "hit": false
+        },
+        {
+          "id": "G030",
+          "score": 30.0,
+          "hit": true
+        },
+        {
+          "id": "G004",
+          "score": 4.0,
+          "hit": false
+        },
+        {
+          "id": "G017",
+          "score": 17.0,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "observation": {
+        "task": {
+          "Task": "Synthetic software verification; no biological interpretation"
+        },
+        "candidates": [
+          "G000",
+          "G027",
+          "G021",
+          "G029",
+          "G015",
+          "G038",
+          "G034",
+          "G001",
+          "G020",
+          "G007",
+          "G005",
+          "G010",
+          "G013",
+          "G014",
+          "G037",
+          "G039",
+          "G023",
+          "G008",
+          "G035",
+          "G003",
+          "G033",
+          "G006",
+          "G028",
+          "G018",
+          "G011",
+          "G025",
+          "G031",
+          "G032",
+          "G016",
+          "G002",
+          "G026",
+          "G024"
+        ],
+        "history": [
+          {
+            "round": 1,
+            "selected": [
+              "G009",
+              "G036",
+              "G012",
+              "G022",
+              "G019",
+              "G030",
+              "G004",
+              "G017"
+            ],
+            "feedback": [
+              {
+                "id": "G009",
+                "score": 9.0,
+                "hit": false
+              },
+              {
+                "id": "G036",
+                "score": 36.0,
+                "hit": true
+              },
+              {
+                "id": "G012",
+                "score": 12.0,
+                "hit": false
+              },
+              {
+                "id": "G022",
+                "score": 22.0,
+                "hit": false
+              },
+              {
+                "id": "G019",
+                "score": 19.0,
+                "hit": false
+              },
+              {
+                "id": "G030",
+                "score": 30.0,
+                "hit": true
+              },
+              {
+                "id": "G004",
+                "score": 4.0,
+                "hit": false
+              },
+              {
+                "id": "G017",
+                "score": 17.0,
+                "hit": false
+              }
+            ]
+          }
+        ],
+        "batch_size": 8,
+        "round": 2,
+        "seed": 0,
+        "instruction": "Select exactly batch_size distinct untested candidate IDs. Return JSON {\"selected\": [IDs]}. Maximize total discovered hits."
+      },
+      "selected": [
+        "G026",
+        "G010",
+        "G035",
+        "G016",
+        "G034",
+        "G023",
+        "G015",
+        "G007"
+      ],
+      "truth": [
+        {
+          "id": "G026",
+          "score": 26.0,
+          "hit": true
+        },
+        {
+          "id": "G010",
+          "score": 10.0,
+          "hit": false
+        },
+        {
+          "id": "G035",
+          "score": 35.0,
+          "hit": true
+        },
+        {
+          "id": "G016",
+          "score": 16.0,
+          "hit": false
+        },
+        {
+          "id": "G034",
+          "score": 34.0,
+          "hit": true
+        },
+        {
+          "id": "G023",
+          "score": 23.0,
+          "hit": false
+        },
+        {
+          "id": "G015",
+          "score": 15.0,
+          "hit": false
+        },
+        {
+          "id": "G007",
+          "score": 7.0,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "observation": {
+        "task": {
+          "Task": "Synthetic software verification; no biological interpretation"
+        },
+        "candidates": [
+          "G000",
+          "G027",
+          "G021",
+          "G029",
+          "G038",
+          "G001",
+          "G020",
+          "G005",
+          "G013",
+          "G014",
+          "G037",
+          "G039",
+          "G008",
+          "G003",
+          "G033",
+          "G006",
+          "G028",
+          "G018",
+          "G011",
+          "G025",
+          "G031",
+          "G032",
+          "G002",
+          "G024"
+        ],
+        "history": [
+          {
+            "round": 1,
+            "selected": [
+              "G009",
+              "G036",
+              "G012",
+              "G022",
+              "G019",
+              "G030",
+              "G004",
+              "G017"
+            ],
+            "feedback": [
+              {
+                "id": "G009",
+                "score": 9.0,
+                "hit": false
+              },
+              {
+                "id": "G036",
+                "score": 36.0,
+                "hit": true
+              },
+              {
+                "id": "G012",
+                "score": 12.0,
+                "hit": false
+              },
+              {
+                "id": "G022",
+                "score": 22.0,
+                "hit": false
+              },
+              {
+                "id": "G019",
+                "score": 19.0,
+                "hit": false
+              },
+              {
+                "id": "G030",
+                "score": 30.0,
+                "hit": true
+              },
+              {
+                "id": "G004",
+                "score": 4.0,
+                "hit": false
+              },
+              {
+                "id": "G017",
+                "score": 17.0,
+                "hit": false
+              }
+            ]
+          },
+          {
+            "round": 2,
+            "selected": [
+              "G026",
+              "G010",
+              "G035",
+              "G016",
+              "G034",
+              "G023",
+              "G015",
+              "G007"
+            ],
+            "feedback": [
+              {
+                "id": "G026",
+                "score": 26.0,
+                "hit": true
+              },
+              {
+                "id": "G010",
+                "score": 10.0,
+                "hit": false
+              },
+              {
+                "id": "G035",
+                "score": 35.0,
+                "hit": true
+              },
+              {
+                "id": "G016",
+                "score": 16.0,
+                "hit": false
+              },
+              {
+                "id": "G034",
+                "score": 34.0,
+                "hit": true
+              },
+              {
+                "id": "G023",
+                "score": 23.0,
+                "hit": false
+              },
+              {
+                "id": "G015",
+                "score": 15.0,
+                "hit": false
+              },
+              {
+                "id": "G007",
+                "score": 7.0,
+                "hit": false
+              }
+            ]
+          }
+        ],
+        "batch_size": 8,
+        "round": 3,
+        "seed": 0,
+        "instruction": "Select exactly batch_size distinct untested candidate IDs. Return JSON {\"selected\": [IDs]}. Maximize total discovered hits."
+      },
+      "selected": [
+        "G038",
+        "G029",
+        "G025",
+        "G013",
+        "G018",
+        "G024",
+        "G014",
+        "G002"
+      ],
+      "truth": [
+        {
+          "id": "G038",
+          "score": 38.0,
+          "hit": true
+        },
+        {
+          "id": "G029",
+          "score": 29.0,
+          "hit": true
+        },
+        {
+          "id": "G025",
+          "score": 25.0,
+          "hit": true
+        },
+        {
+          "id": "G013",
+          "score": 13.0,
+          "hit": false
+        },
+        {
+          "id": "G018",
+          "score": 18.0,
+          "hit": false
+        },
+        {
+          "id": "G024",
+          "score": 24.0,
+          "hit": true
+        },
+        {
+          "id": "G014",
+          "score": 14.0,
+          "hit": false
+        },
+        {
+          "id": "G002",
+          "score": 2.0,
+          "hit": false
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.031539333,
+  "arm": "synthetic-protocol-only",
+  "policy": "external",
+  "data_sha256": "81368b16f6b4612ef20079ced6aba5344ce90a0eb134eb51b58865dc9e1b2a27",
+  "code_sha256": "53b2326f58114b806ca98b9ead18df8ede2e8e31845de013bbc15b5d036ad307",
+  "features_sha256": null,
+  "command": [
+    "python3",
+    "experiments/bda/examples/random_agent.py"
+  ],
+  "alpha": 1.0
+}

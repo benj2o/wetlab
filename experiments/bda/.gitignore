@@ -1,0 +1,6 @@
+data/
+runs/
+training/
+adapters/
+__pycache__/
+.venv/

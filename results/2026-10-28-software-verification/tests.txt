@@ -1,0 +1,47 @@
+test_duplicate_and_nonfinite_outcomes (test_bench.ReplayTests) ... ok
+test_feedback_controls_preserve_oracle_scoring (test_bench.ReplayTests) ... ok
+test_invalid_selection_fails_without_free_repair (test_bench.ReplayTests) ... ok
+test_no_hidden_outcomes_or_rank_order (test_bench.ReplayTests) ... ok
+test_overbudget (test_bench.ReplayTests) ... ok
+test_policy_mutation_cannot_change_oracle (test_bench.ReplayTests) ... ok
+test_process_protocol (test_bench.ReplayTests) ... ok
+test_repeatable_unique_fixed_budget (test_bench.ReplayTests) ... ok
+test_training_exports_refuse_test_and_match_outcome_exposures (test_bench.ReplayTests) ... ok
+test_missing_seed_or_incompatible_budget_is_refused (test_bench.SummaryTests) ... ok
+test_paired_analysis_and_duplicate_detection (test_bench.SummaryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.133s
+
+OK
+Exported 2 examples per arm
+[
+  {
+    "dataset": "Carnevale22_Adenosine",
+    "feedback": "true",
+    "arm": "base",
+    "reference": "base",
+    "seeds": 3,
+    "mean_hits": 4.333333333333333,
+    "mean_delta_hits": 0,
+    "paired_seed_bootstrap_95": [
+      0,
+      0
+    ],
+    "warning": "Conditional seed variability only; not uncertainty across biological studies."
+  },
+  {
+    "dataset": "Carnevale22_Adenosine",
+    "feedback": "true",
+    "arm": "trained",
+    "reference": "base",
+    "seeds": 3,
+    "mean_hits": 4.333333333333333,
+    "mean_delta_hits": 0,
+    "paired_seed_bootstrap_95": [
+      0,
+      0
+    ],
+    "warning": "Conditional seed variability only; not uncertainty across biological studies."
+  }
+]
