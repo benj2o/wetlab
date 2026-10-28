@@ -40,6 +40,8 @@ Proposed test: leave one independent campaign system out, then test whether earl
 
 If the measured candidate union gives comparable outcomes under one assay protocol, it can support selection replay restricted to that measured union. Disclose that historical selection bias remains. It cannot establish the value of arbitrary alternative experiments never measured in the source campaign. A fitted surrogate is a separate simulator study, not experimental ground truth; do not train and judge a policy using the same surrogate as if it were a laboratory.
 
+The inspected SDLGuide tutorial CSV contains 40 observations assigned to iterations 1–5, additional measured rows without iterations, and empty placeholders. This is a small integration fixture, not a large training corpus. [Actual CSV](https://raw.githubusercontent.com/GormleyLab/SDLGuide/main/Hands-on%20Tutorial/GOx%20Assay%20data_bank_renamed.csv).
+
 Run a 48-hour completeness/schema audit. Proceed with the usable subset, document exclusions, and record what can actually be evaluated. The bundle is useful even if the first result is limited to chronology-aware transfer prediction. Public availability and a code license are not blanket evidence of commercial rights to all data and embedded material; resolve the specific ambiguous artifacts before commercial training.
 
 ### 8. Pfizer HiTEA — keep 3/5; run early
@@ -108,7 +110,17 @@ The following are planning ranges, not measured runtimes. They assume processed 
 | JUMP well-profile transfer | 1–2 days | 30–150 hours | 4–10 days | 3–7 days |
 | Arc compact-model adaptation/entry | 1–2 days | 100–600 hours | 1–4 weeks | 4–8 days for a tightly scoped existing-model entry |
 
-For the campaign bundle, an individual source can often yield a baseline in hours once its table is understood. Cross-source normalization and valid evaluation dominate the 3–7 day combined schedule. There is no finite promised end date for a missing archive, unavailable database or unresolved access. These are not GPU tasks.
+For the campaign bundle, initial source-specific targets are below. These are AI-assisted parsing plus classical/compact-model baselines, not three-seed LLM training studies:
+
+| Source within #7 | First narrow baseline after usable file access | Compute requirement |
+|---|---|---|
+| ALDE complete landscape / real ParPgb table | 2–8 hours | CPU baseline; up to several A6000-hours for optimizer comparisons |
+| SAMPLE historical-round data | 4–12 hours | CPU GP/uncertainty baseline; GPU optional |
+| Metalloenzyme measured tables | 3–8 hours | CPU descriptors/GP/ensemble; GPU optional |
+| Cell-free formulation tables | 3–8 hours | CPU GP/tree baseline; GPU optional |
+| SDLGuide | 1–3 hours | CPU; generally no GPU needed |
+
+An individual source can often yield a baseline in hours once its table is understood. Cross-source normalization and valid evaluation dominate the 3–7 day combined schedule. There is no finite promised end date for a missing archive, unavailable database or unresolved access. These are not GPU tasks.
 
 If the intended claim specifically requires **LLM weight training**, add an explicit second layer: base versus outcomes-adapted versus history-adapted versions of one 7–14B model, repeated with three training seeds. A compact retrieval/selection tool must serve candidates and observations consistently, rather than printing million-row libraries in prompts. Budget another **100–1,000 H100 GPU-hours per domain** for scoped fine-tuning and thousands of inference decisions; profile and revise this range. Training tokens, context length, output length and inference call count determine that cost. A specialist-only win cannot be relabeled as improved general reasoning by the base LLM.
 
@@ -139,3 +151,5 @@ Days 4–7: finish the accelerated primary comparisons, including held-out group
 Weeks 2–3: extend the strongest result across independent data groups and training seeds, and run the explicit LLM experiment if that is the commercial claim. Use real campaign histories to identify what richer metadata actually buys. Nothing here yet justifies claiming all aspects of a better scientist, but a narrow capability improvement can be useful and commercially meaningful.
 
 CEO note: We have enough compute to execute decisively. The first win to seek is a repeatable reduction in experiments needed on unfamiliar problems. The main danger is spending weeks improving a score whose split or ground truth cannot support the business claim.
+
+An [earlier detailed campaign-source audit](2026-10-28-campaign-source-audit.md) is preserved alongside this report. The portfolio scope and runtime assumptions above supersede earlier narrower estimates where they differ.
