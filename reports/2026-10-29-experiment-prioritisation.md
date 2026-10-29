@@ -169,6 +169,31 @@ Stated plainly, so the plan can be attacked rather than relitigated.
 - **Deprioritising ProteinGym is a real bet.** If the specialist arm is weak on BDA and ORCS, ProteinGym's curated breadth becomes the better substrate and this order should flip. The gate is the day-5 result, not another round of scoring.
 - **None of this tests C6, whether anyone pays.** Zero buyers have stated a price. The strongest experimental result here leaves the commercial question untouched, and that one is answered by conversations, not compute.
 
+## Addendum — licence and start-today status
+
+All verified by direct API fetch in this session [V]. The 28 October audit recorded that "the Zenodo pages rendered blank license fields in this inspection for several records" and that the SAMPLE archive "could not be accessed." Both were rendering and access artefacts, not missing licences: **the Zenodo REST API resolves every one of them, and all three are CC BY 4.0.** SAMPLE downloads fine.
+
+**Startable today — fits in the 689 MB currently free, licence clean:**
+
+| Dataset | Licence [V] | Useful download | Score |
+|---|---|---:|:---:|
+| BioDiscoveryAgent (8 screens) | MIT | 6.9 MB | 3 |
+| Anthropic binder (summary tables) | CC BY 4.0 | small subset of 100k files | 3 |
+| Metalloenzyme — `assay_and_ML_data.zip` | CC BY 4.0 | 365 KB | 2 (NEW-E substrate) |
+| Cell-free biofoundry (all 3 archives) | CC BY 4.0 | 822 KB | 2 (NEW-E substrate) |
+| SAMPLE | CC BY 4.0 | 131 MB | 2 (NEW-E substrate) |
+| SDLGuide | MIT | 55 MB | 1–2 (integration check) |
+
+Total under ~200 MB. **The entire #7 campaign bundle plus the BDA screens fit in available disk today.** Only ORCS, ProteinGym and HiTEA require the disk to be cleared first.
+
+Avoid for the metalloenzyme record: `structures.zip` is 4.98 GB and `data.zip` 1.75 GB. Neither is needed for the measured-table work.
+
+**Licence clean, blocked only on disk:** BioGRID ORCS (MIT [V]), ProteinGym (MIT [V]), HiTEA (MIT [V]), ALDE (MIT, repo-level, prior audit).
+
+**Not startable:** PRISM/DepMap (portal returns a bot-verification screen; licence unverified), Genetic Engineering Attribution Challenge (download availability unconfirmed), ChemWorld and WhatWorkedBench (no repository URL confirmed on either abstract page).
+
+**Licence-disqualified for commercially-framed results:** LabOS LSV (noncommercial) and RxRx1 (CC BY-NC-SA 4.0). A noncommercial licence undermines any result presented as commercial validation — exclude these from partnership material regardless of their technical merit.
+
 ## Budget
 
 Everything through day 18 fits inside the €10,000 first-sweep ceiling, and most of it inside €1,000 — the calibration bundle and the BDA replay are CPU work on megabytes. ORCS is the first item needing real storage and sustained compute. Hold LLM fine-tuning arms until the specialist arms produce a signal worth amplifying, per the AssayLLM caveat. Keep the €70,000 reserve untouched until NEW-D or NEW-E produces a number that says what more compute would buy.
