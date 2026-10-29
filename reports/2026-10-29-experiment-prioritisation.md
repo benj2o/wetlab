@@ -44,6 +44,47 @@ The handoff scores #24 a **1** on the explicit grounds that "current IFNG/IL2 ho
 
 **Nine datasets worth adding were found, and several rejections are informative.** Full detail in the table below. The most consequential rejections [V-sub]: DrugComb/NCI-ALMANAC and Tox21 have large row counts but only ~8–10 and ~30–60 independent problems respectively; LINCS L1000 is one production pipeline; a Hugging Face search for round-structured directed-evolution corpora returned **zero** results beyond TadA-Bench. There is no hidden trove of multi-round protein-engineering data. That absence is itself a finding — it is the gap a data business would fill.
 
+## Commissionable today — for data-partnership applications
+
+Licence constraints lifted (warm intros assumed obtainable); the filter below is **is the data reachable now** and **does the experiment score 4+**. Accessibility re-verified 29 Oct [V] unless noted.
+
+### Tier A — start immediately, no permission needed
+
+| # | Dataset | Experiment | Score | Covers | The claim it licenses |
+|---:|---|---|:---:|---|---|
+| **1** | **BioGRID ORCS** [V] 2,217 screens / 418 publications / 825 cell lines | Cross-publication, cross-lab sequential selection: unchanged vs outcomes-trained vs history-trained vs tuned conventional, at matched budget | **4** | **C1, C2, C5** | "On 418 independently published screens, our policy recovers *N%* more validated hits per measurement than a tuned Bayesian baseline, under whole-publication and whole-laboratory holdout." ← **the uplift number** |
+| **2** | Same corpus | **Scaling curve**: held-out performance vs number of training campaigns, 1 → ~400 | **5** priority / 4 evidential | **C4** | "Held-out capability rises monotonically with campaign count through N≈400, no plateau." ← **this is the partnership argument itself**: it prices the next campaign |
+| **3** | **GEAC** [V] (81,833 plasmids, 1,314 labs) + **MARCO** [V] (~493k images, 5 institutions) + **RxRx1** [V] (51 batches) | Lab-identity confound probe, then uplift net of site identity | **4** | **C5** | "Our gain survives leave-one-site-out. A site-identity classifier reaches *X%*, and we report uplift net of it." ← kills the first objection any reviewer raises |
+| **4** | **ChEMBL 37** [V, EBI API] 24,527,044 activities / **101,100 publications** | True prospective temporal split: train pre-cutoff, test on later-published assays | **4** | **C1, C2** | "Transfers to assays published after the training cutoff, over 101,100 independent source documents." ← also the cleanest contamination answer |
+| **5** | **PubChem BioAssay** [V] `is_confirmatory_assay_of` links | Score our selections against what real screening teams carried forward, graded on confirmatory outcomes | **4 cond.** | **C1, C2** | "Our policy matches or beats the follow-up choices real screening teams actually made." ← the only **human-policy baseline** available |
+| **6** | Two SDL archives [V] — enzymatic electrochemistry (>10,000 voltammograms, replicate index, Zenodo 18897023) and metal electrodeposition (ships execution scripts, Zenodo 20531843) — plus the #7 bundle | **Process vs endpoint**, with the LLM-written-rationale arm at matched tokens | **5** priority | **C3** | "Ordered execution records beat endpoint-only training by *X*; a post-hoc written rationale captures only *Y* of that gap." ← **decides whether to build a lab** |
+| **7** | **BDA** [V] 8 screens, 6.9 MB | Harness validation on real biology + feedback controls; Steinhart = modality shift | 3 | C1, C2 | Engineering de-risk and the on-ramp to #1. Runs today. |
+| **8** | **Anthropic binder** [V] ungated, CC-BY-4.0 | Assay noise floor from two-vendor agreement and replicates | 3 | prereq | Bounds every uplift number above. Without it, a 5% claim is unfalsifiable. |
+
+**BEAR is out.** [V] Still unreachable (connection failure, consistent with the earlier 403). Items 6's two Zenodo archives replace it.
+
+**Why #1 is worth more than it looks.** [V] The arXiv page for AssayBench-Loop advertises **no data or code release** — the state-of-the-art result is not publicly reproducible. Its abstract confirms 1,389 screens, 5.67-fold enrichment, 27.7% of hits at ~5% library coverage, and that "performance improves with increasing historical training data and transfers to phenotype categories excluded from training." ORCS lets us build the open equivalent *and* add the cross-laboratory holdout their temporal split cannot support. That is a novel, legible, externally checkable result.
+
+### Tier B — worth a warm intro this week, ranked by what it unlocks
+
+1. **Genentech AssayBench-Loop** — direct comparison against the published SOTA on its own benchmark. Not publicly released [V], so this is the single highest-value ask.
+2. **Full Ginkgo/OpenAI CFPS histories** (#31) — real closed-loop campaign records with outcomes; already flagged unscored-pending-access.
+3. **CACHE** [V] — 9 targets × ~20 teams of blinded prospective selections with wet-lab readout, released without use restrictions. The only source of a **blinded human-expert selection** baseline.
+4. **LABBench2** — gated on Hugging Face terms acceptance only; trivial to clear. Capability covariate, not sequential.
+5. **CAGI** [V] — register plus a Data Use Agreement; CAGI7 alone had **fourteen completed challenges** with held-back experimental ground truth. Caveat: it scores variant-effect **prediction**, which the rubric caps at **2** for this thesis. Valuable for external credibility and a prediction product, not for the selection claim.
+
+### The honest ceiling
+
+**No existing dataset yields a rubric 5.** The handoff is right that nothing listed qualifies, and nothing I found changes it: a 5 requires training-induced transfer measured on *fresh or blinded* investigations, and every corpus above is retrospective. Items 2 and 6 score 5 as **priorities** — they are the two whose results most change the company — while remaining retrospective evidence.
+
+To claim a genuine 5 you must enter a **live blinded challenge** before outcomes are known. Current options are thin: Arc Virtual Cell closes 5 November (seven days — still skip it; prediction-only and no baseline exists), and CAGI's RGP-CRAM challenge is open [V]. Everything else has passed. Plan the next cycle deliberately rather than scrambling.
+
+### What this package can and cannot say
+
+After items 1–4 and 8, which are all open-access and reachable today, the defensible position is: **C1 proven on open data, C2 proven across publications and over time, C4 measured, C5 controlled for, with a stated measurement floor.** That is four of five claims with empirical support, independently checkable by a reviewer.
+
+What it will not support: **C3 until item 6 runs** (and that substrate is thin — expect a bounded result, not a clean one), any claim of biological discovery, any prospective validation, and **C6, whether anyone pays**, which no amount of compute addresses. For an application, say "four of five technical claims have retrospective empirical support; the fifth is in progress and the commercial question is open." That is stronger than an overclaim a reviewer can puncture in one question.
+
 ## The thesis, decomposed
 
 The business requires five claims. Scoring an experiment means asking which one it discriminates.
@@ -168,31 +209,6 @@ Stated plainly, so the plan can be attacked rather than relitigated.
 - **Horlbeck may be too different to be informative.** Gene-pair selection could fail for interface reasons rather than capability reasons. Treat a failure as uninformative unless the mechanism is diagnosed.
 - **Deprioritising ProteinGym is a real bet.** If the specialist arm is weak on BDA and ORCS, ProteinGym's curated breadth becomes the better substrate and this order should flip. The gate is the day-5 result, not another round of scoring.
 - **None of this tests C6, whether anyone pays.** Zero buyers have stated a price. The strongest experimental result here leaves the commercial question untouched, and that one is answered by conversations, not compute.
-
-## Addendum — licence and start-today status
-
-All verified by direct API fetch in this session [V]. The 28 October audit recorded that "the Zenodo pages rendered blank license fields in this inspection for several records" and that the SAMPLE archive "could not be accessed." Both were rendering and access artefacts, not missing licences: **the Zenodo REST API resolves every one of them, and all three are CC BY 4.0.** SAMPLE downloads fine.
-
-**Startable today — fits in the 689 MB currently free, licence clean:**
-
-| Dataset | Licence [V] | Useful download | Score |
-|---|---|---:|:---:|
-| BioDiscoveryAgent (8 screens) | MIT | 6.9 MB | 3 |
-| Anthropic binder (summary tables) | CC BY 4.0 | small subset of 100k files | 3 |
-| Metalloenzyme — `assay_and_ML_data.zip` | CC BY 4.0 | 365 KB | 2 (NEW-E substrate) |
-| Cell-free biofoundry (all 3 archives) | CC BY 4.0 | 822 KB | 2 (NEW-E substrate) |
-| SAMPLE | CC BY 4.0 | 131 MB | 2 (NEW-E substrate) |
-| SDLGuide | MIT | 55 MB | 1–2 (integration check) |
-
-Total under ~200 MB. **The entire #7 campaign bundle plus the BDA screens fit in available disk today.** Only ORCS, ProteinGym and HiTEA require the disk to be cleared first.
-
-Avoid for the metalloenzyme record: `structures.zip` is 4.98 GB and `data.zip` 1.75 GB. Neither is needed for the measured-table work.
-
-**Licence clean, blocked only on disk:** BioGRID ORCS (MIT [V]), ProteinGym (MIT [V]), HiTEA (MIT [V]), ALDE (MIT, repo-level, prior audit).
-
-**Not startable:** PRISM/DepMap (portal returns a bot-verification screen; licence unverified), Genetic Engineering Attribution Challenge (download availability unconfirmed), ChemWorld and WhatWorkedBench (no repository URL confirmed on either abstract page).
-
-**Licence-disqualified for commercially-framed results:** LabOS LSV (noncommercial) and RxRx1 (CC BY-NC-SA 4.0). A noncommercial licence undermines any result presented as commercial validation — exclude these from partnership material regardless of their technical merit.
 
 ## Budget
 
