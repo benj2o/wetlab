@@ -3,6 +3,7 @@
 We test whether training on experimental experience improves decisions on unfamiliar experimental problems. The first benchmark uses retrospective replay of measured genetic-perturbation screens.
 
 - [Brief hypothesis, scoring rubric and experiment inventory](HANDOFF.md)
+- [Experiment prioritisation, re-scoring and run order (29 Oct)](reports/2026-10-29-experiment-prioritisation.md)
 - [Experiment 1: assessment, protocol and commands](experiments/bda/README.md)
 - [Execution estimate and experiment priorities](reports/2026-10-28-execution-and-priorities.md)
 - [Colab CPU smoke test and setup notebook](notebooks/bda_start.ipynb)
